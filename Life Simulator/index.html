@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+  <meta charset="utf-8">
+    <title>Life Simulator</title>
+
+    <h1>Life Simulator</h1>
+ 
+<h2 id="clock"></h2>
+    
+	<style>
+	   table, th, td{
+	    border: 1px solid #333;
+	   }
+  	</style>
+    
+    <div id = "div1">
+    <table>
+    	<tr>
+    		<td>Health = </td> 
+    		<td><p id = "health">10</p></td>
+    	</tr>
+    	<tr>
+    		<td>Money = </td>
+    		<td><p id = "money">0</p></td>
+    	</tr>
+    	<tr>
+    		<td>Food = </td>
+    		<td><p id = "food">100</p></td>
+    	</tr>
+    </table>
+    
+    </div>
+
+    </head>
+
+<body onload="setInterval('updateClock()', 200);">
+
+<button id = "work" type="button" onclick = "newWork()">Work!</button>
+<br>
+<button id = "eat" type="button" onclick = "newEat()">Eat!</button>
+<br>
+<button id = "sleep" type="button" onclick = "newSleep()">Sleep!</button>
+<script src ="app.js"></script>
+</body>
+</html>
