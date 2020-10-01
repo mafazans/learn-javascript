@@ -1,7 +1,9 @@
+// declare variable
 var health = 100;
 var money = 0;
 var food = 100;
 
+// function for to do work
 function newWork() {
 	console.log("Work");
 	money = money + 1;
@@ -12,6 +14,7 @@ function newWork() {
 	document.getElementById("food").innerHTML=food;
 };
 
+// function if click eat
 function newEat() {
 	console.log("Eat");
 	money = money - 1;
@@ -21,6 +24,7 @@ function newEat() {
 	document.getElementById("food").innerHTML=food;
 };
 
+// function if click sleep
 function newSleep() {
 	console.log("Sleep");
 	health = health + 5;
@@ -30,6 +34,7 @@ function newSleep() {
 	document.getElementById("food").innerHTML=food;
 };
 
+// the time for this simulator
 var countdown = setInterval(function(){
   if (health == 0) {
     alert("Game Over!");
